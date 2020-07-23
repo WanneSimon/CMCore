@@ -26,6 +26,9 @@ public class DatabaseConfiguration {
 	@Value("${mybatis-plus.mapper-locations}")
 	private String mapper_locations;
 	
+	@Value("${mybatis-plus.type-aliases-package}")
+	private String type_aliases_package;
+	
 	@Primary
 	@Bean(name = "datasource")
 	@ConfigurationProperties("spring.datasource.druid.default")
@@ -47,6 +50,7 @@ public class DatabaseConfiguration {
 		final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
 		sessionFactory.setDataSource(masterDataSource);
 		sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(mapper_locations));
+		sessionFactory.setTypeAliasesPackage(type_aliases_package);
 		return sessionFactory.getObject();
 	}
 	

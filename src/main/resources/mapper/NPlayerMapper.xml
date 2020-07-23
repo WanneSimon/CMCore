@@ -2,11 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cc.wanforme.cmcore.base.mapper.NPlayerMapper">
 
-	<select id="selectByName" parameterType="java.lang.String" resultType="nPlayer">
+	<select id="selectByName" parameterType="java.lang.String" resultType="NPlayer">
 		select * from n_player where name=#{name}
 	</select>
 
-	<select id="selectByUserName" parameterType="java.lang.String" resultType="nPlayer">
+	<select id="selectByUserName" parameterType="java.lang.String" resultType="NPlayer">
 		select * from n_player where userName=#{username}
 	</select>
 	
