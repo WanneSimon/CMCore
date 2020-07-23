@@ -19,8 +19,4 @@ ops.txt
 server.properties
 white-list.txt
 
-
-# others
-./config/
-log4j2-spring.xml
 test/
