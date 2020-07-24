@@ -19,7 +19,8 @@
 		<!-- 指定maven版本，eclispe 中 pom文件第一行报错 -->
 		<!-- <maven-jar-plugin.version>3.0.0</maven-jar-plugin.version> -->
 		<wannukkit-springboot-starter.version>1.0.0-SNAPSHOT</wannukkit-springboot-starter.version>
-		<mybatisplus.version>3.0.1</mybatisplus.version>
+		<!-- <mybatisplus.version>3.0.1</mybatisplus.version> -->
+		<mybatisplus.version>3.3.2</mybatisplus.version>
 		<swagger2.version>2.7.0</swagger2.version>
 		<swagger-ui.version>2.7.0</swagger-ui.version>
 		<druid-starter.version>1.1.10</druid-starter.version>
@@ -123,6 +124,13 @@
 			<artifactId>druid-spring-boot-starter</artifactId>
 			<version>${druid-starter.version}</version>
 		</dependency>
+		
+		<!-- SpringBoot 2.3 中使用 2.3.30, mybatis-plus 使用 2.3.29 
+		<dependency>
+	      <groupId>org.freemarker</groupId>
+	      <artifactId>freemarker</artifactId>
+	    </dependency>
+		 -->
 		
 		 <!-- 换用mybatis-plus -->
 		 <dependency>
