@@ -21,6 +21,7 @@
 		<wannukkit-spring-boot-starter.version>1.0.0-SNAPSHOT</wannukkit-spring-boot-starter.version>
 		<!-- <mybatisplus.version>3.0.1</mybatisplus.version> -->
 		<mybatisplus.version>3.3.2</mybatisplus.version>
+		<mybatis-plus-generator.version>3.0.7.1</mybatis-plus-generator.version>
 		<swagger2.version>2.7.0</swagger2.version>
 		<swagger-ui.version>2.7.0</swagger-ui.version>
 		<druid-starter.version>1.1.10</druid-starter.version>
@@ -138,6 +139,12 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatisplus.version}</version>
         </dependency>
+        <!-- mp自动代码生成-->
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-generator</artifactId>
+			<version>${mybatis-plus-generator.version}</version>
+		</dependency>
 		<!-- 引入jdbc -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
