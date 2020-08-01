@@ -178,11 +178,13 @@
             <version>${mybatisplus.version}</version>
         </dependency>
         <!-- mp自动代码生成-->
+        <!-- 
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-generator</artifactId>
 			<version>${mybatis-plus-generator.version}</version>
 		</dependency>
+		 -->
 		<!-- 引入jdbc -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
