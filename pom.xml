@@ -37,6 +37,21 @@
         </repository>
     </repositories>
 
+	<!-- 项目发布管理 -->
+	<distributionManagement>
+	  <repository>
+	    <id>releases</id>
+	    <name>User Project Release</name>
+	    <url>http://www.repo.wanforme.cc/repository/maven-releases/</url>
+	  </repository>
+	 
+	  <snapshotRepository>
+	    <id>snapshots</id>
+	    <name>User Project SNAPSHOTS</name>
+	    <url>http://www.repo.wanforme.cc/repository/maven-snapshots/</url>
+	  </snapshotRepository>
+	</distributionManagement>
+
 	<properties>
 		<java.version>1.8</java.version>
 		<!-- 指定maven版本，eclispe 中 pom文件第一行报错 -->
